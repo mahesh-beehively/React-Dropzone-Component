@@ -41,7 +41,7 @@ export class DropzoneComponent extends React.Component {
   componentDidMount () {
     const options = this.getDjsConfig()
 
-    Dropzone = Dropzone || require('dropzone')
+    Dropzone = Dropzone || require('./dropzone/dist/dropzone')
     Dropzone.autoDiscover = false
 
     if (!this.props.config.postUrl && !this.props.eventHandlers.drop) {
